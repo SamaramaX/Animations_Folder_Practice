@@ -1,0 +1,42 @@
+*{
+    margin:0;
+    padding:0;
+    font-size: 62.5%;
+}
+
+
+html, body{
+    height:100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-color: blueviolet;
+    color: #fff;
+}
+
+
+.logo{
+    font-family: 'Wallpoet', cursive;
+    font-size: 30rem;
+    color: transparent;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip:text;
+    background-image: url(stars.jpg);
+    background-size: 100%;
+    animation: diagonal_slide 60s cubic-bezier(.43,.01,.57,.99);
+}
+
+@keyframes diagonal_slide{
+    0%{
+        background-position:0% 0%;
+    }
+    50%{
+        background-position: 100% 100%;
+    }
+    100%{
+        background-position: 0% 0%;
+    }
+
+}
